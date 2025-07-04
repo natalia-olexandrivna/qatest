@@ -1,0 +1,46 @@
+{
+  "id": "10a32598-5691-45bc-a859-0a31ad1c3082",
+  "version": "2.0",
+  "name": "1",
+  "url": "3dnews.ru",
+  "tests": [{
+    "id": "a57a6032-2084-44b2-85f4-3636e03b3541",
+    "name": "test",
+    "commands": [{
+      "id": "c75aa511-1b47-4a91-8755-62565c2e3d87",
+      "comment": "",
+      "command": "open",
+      "target": "https://3dnews.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e1269b7f-bc67-4f1f-b614-e2da67c96d49",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "855x576",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50bd6574-e354-4080-858e-990f7a3d5b9d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#stripe > .mlogo > img",
+      "targets": [
+        ["css=#stripe > .mlogo > img", "css:finder"],
+        ["xpath=//div[@id='stripe']/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1f8b9738-716e-4ab9-9db3-6a9ab884f50b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a57a6032-2084-44b2-85f4-3636e03b3541"]
+  }],
+  "urls": [],
+  "plugins": []
+}
